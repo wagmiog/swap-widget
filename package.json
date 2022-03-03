@@ -1,0 +1,19 @@
+{
+  "name": "@pangolindex/swap-widget",
+  "version": "1.0.0",
+  "description": "A widget for embedding Pangolin's swap functionality in other dapps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pangolindex/swap-widget.git"
+  },
+  "author": "Pangolin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pangolindex/swap-widget/issues"
+  },
+  "homepage": "https://github.com/pangolindex/swap-widget#readme"
+}
