@@ -4,7 +4,7 @@ import { AddressZero } from '@ethersproject/constants'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { BigNumber } from '@ethersproject/bignumber'
 import IPangolinRouter from '@pangolindex/exchange-contracts/artifacts/contracts/pangolin-periphery/interfaces/IPangolinRouter.sol/IPangolinRouter.json'
-import { ROUTER_ADDRESS } from '../constants'
+import { ROUTER_ADDRESS } from '../constants/address'
 import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, CAVAX, currencyEquals, Trade } from '@pangolindex/sdk'
 import { TokenAddressMap } from '../state/lists/hooks'
 

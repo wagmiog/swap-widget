@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import { darken } from 'polished'
 import { ArrowLeft, X } from 'react-feather'
-import CrossIcon from 'src/assets/svg/cross.svg'
-import { useIsBetaUI } from 'src/hooks/useLocation'
+import CrossIcon from '../assets/svg/cross.svg'
+import { useIsBetaUI } from '../hooks/useLocation'
 import { Box } from '@pangolindex/components'
 
 export const Button = styled.button.attrs<{ warning: boolean }, { backgroundColor: string }>(({ warning, theme }) => ({
