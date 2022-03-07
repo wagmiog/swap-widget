@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageWrapper, GridContainer, TopContainer, StatsWrapper } from './styleds'
+import { PageWrapper, GridContainer, TopContainer } from './styleds'
 import SwapWidget from './SwapWidget'
 import LimitOrderList from './LimitOrderList'
 import { useGelatoLimitOrderList } from '../state/swap/hooks'

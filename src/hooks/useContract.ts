@@ -18,8 +18,8 @@ import { MULTICALL_ABI, MULTICALL_NETWORKS } from '../constants/multicall'
 import { getContract } from '../utils'
 import { useActiveWeb3React } from './index'
 import { AIRDROP_ADDRESS, BRIDGE_MIGRATOR_ADDRESS, MINICHEF_ADDRESS, ZERO_ADDRESS } from '../constants'
-import { GOVERNANCE_ADDRESS, PNG } from '../constants'
-import { REWARDER_VIA_MULTIPLIER_INTERFACE } from '../constants/abis/rewarderViaMultiplier'
+import { GOVERNANCE_ADDRESS, PNG } from '../constants/address'
+import { REWARDER_VIA_MULTIPLIER_INTERFACE } from '../abis/rewarderViaMultiplier'
 
 // returns null on errors
 function useContract(address: string | undefined, ABI: any, withSignerIfPossible = true): Contract | null {
