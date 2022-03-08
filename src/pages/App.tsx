@@ -3,19 +3,13 @@ import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import Web3ReactManager from '../components/Web3ReactManager'
 
-import SwapV2 from './swap'
+import SwapV2 from '../components'
 
 const AppWrapper = styled.div`
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   overflow-x: hidden;
-`
-
-const HeaderWrapper = styled.div`
-  ${({ theme }) => theme.flexRowNoWrap}
-  width: 100%;
-  justify-content: space-between;
 `
 
 const BodyWrapper = styled.div<{ isBeta: boolean }>`
@@ -44,18 +38,18 @@ const Marginer = styled.div`
 `
 
 export default function App() {
+  const isBeta = false
 
   return (
     <Suspense fallback={null}>
       <AppWrapper>
-
-        <BodyWrapper>
+        <BodyWrapper isBeta={isBeta}>
           <Web3ReactManager>
             <Switch>
-              <Route exact path="/swap" component={SwapV2} />
+              <Route component={SwapV2} />
             </Switch>
           </Web3ReactManager>
-          <Marginer />
+          {!isBeta && <Marginer />}
         </BodyWrapper>
       </AppWrapper>
     </Suspense>

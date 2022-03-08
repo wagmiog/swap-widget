@@ -5,9 +5,12 @@ import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { NetworkConnector } from './NetworkConnector'
 
-const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
+const REACT_APP_NETWORK_URL="https://api.avax.network/ext/bc/C/rpc"
+const REACT_APP_CHAIN_ID="43114"
 
-export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '43114')
+const NETWORK_URL = REACT_APP_NETWORK_URL
+
+export const NETWORK_CHAIN_ID: number = parseInt(REACT_APP_CHAIN_ID ?? '43114')
 
 if (typeof NETWORK_URL === 'undefined') {
   throw new Error(`REACT_APP_NETWORK_URL must be a defined environment variable`)

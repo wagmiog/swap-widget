@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageWrapper, GridContainer, TopContainer, StatsWrapper } from '../../components/styleds'
+import { PageWrapper, GridContainer, TopContainer, StatsWrapper } from './styleds'
 import SwapWidget from '../../components/SwapWidget'
 import LimitOrderList from '../../components/LimitOrderList'
 import { useGelatoLimitOrderList } from '../../state/swap/hooks'
@@ -11,6 +11,8 @@ const SwapUI = () => {
   return (
     <PageWrapper>
       <TopContainer>
+          <StatsWrapper>
+          </StatsWrapper>
         <SwapWidget />
       </TopContainer>
 
