@@ -14,7 +14,7 @@ import { useSelectedListInfo } from '../../state/lists/hooks'
 import BaseRow, { RowBetween } from '../../components/Row'
 import TokenListDrawer from '../TokenListDrawer'
 import usePrevious from '../../hooks/usePrevious'
-import { useActiveWeb3React } from 'src/hooks'
+import { useActiveWeb3React } from '../../hooks'
 
 interface Props {
   isOpen: boolean

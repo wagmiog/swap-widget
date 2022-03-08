@@ -17,7 +17,7 @@ import WETH_ABI from '../abis/weth.json'
 import { MULTICALL_ABI, MULTICALL_NETWORKS } from '../constants/multicall'
 import { getContract } from '../utils'
 import { useActiveWeb3React } from './index'
-import { AIRDROP_ADDRESS, BRIDGE_MIGRATOR_ADDRESS, MINICHEF_ADDRESS, ZERO_ADDRESS } from '../constants'
+import { AIRDROP_ADDRESS, BRIDGE_MIGRATOR_ADDRESS, MINICHEF_ADDRESS, ZERO_ADDRESS } from '../constants/address'
 import { GOVERNANCE_ADDRESS, PNG } from '../constants/address'
 import { REWARDER_VIA_MULTIPLIER_INTERFACE } from '../abis/rewarderViaMultiplier'
 

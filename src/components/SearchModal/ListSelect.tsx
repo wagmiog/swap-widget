@@ -25,7 +25,7 @@ import QuestionHelper from '../QuestionHelper'
 import Row, { RowBetween } from '../Row'
 import { PaddedColumn, SearchInput, Separator, SeparatorDark } from './styleds'
 import { useTranslation } from 'react-i18next'
-import Toggle from '../../components/Toggle'
+import Toggle from '../Toggle'
 import TokenListOrigin from '../TokenListOrigin'
 
 const UnpaddedLinkStyledButton = styled(LinkStyledButton)`

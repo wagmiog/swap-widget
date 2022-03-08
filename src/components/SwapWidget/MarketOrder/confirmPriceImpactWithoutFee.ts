@@ -1,6 +1,6 @@
 import { Percent } from '@pangolindex/sdk'
 import { ALLOWED_PRICE_IMPACT_HIGH, PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN } from '../../../constants/address'
-import i18next from '../../i18n'
+import i18next from '../../../i18n'
 
 /**
  * Given the price impact, get user confirmation.

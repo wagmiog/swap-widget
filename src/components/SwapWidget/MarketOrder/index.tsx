@@ -38,9 +38,9 @@ import {
   // AddARecipient
   PValue
 } from './styled'
-import { RowBetween } from 'src/components/Row'
+import { RowBetween } from '../../Row'
 import TradeOption from '../TradeOption'
-import { wrappedCurrency } from 'src/utils/wrappedCurrency'
+import { wrappedCurrency } from '../../../utils/wrappedCurrency'
 import { useQueryClient } from 'react-query'
 
 interface Props {

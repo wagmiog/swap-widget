@@ -19,15 +19,15 @@ import {
   Link
 } from './styled'
 import LimitOrderDetailInfo from '../LimitOrderDetailInfo'
-import { CustomLightSpinner } from 'src/theme'
-import Circle from 'src/assets/images/blue-loader.svg'
-import { useActiveWeb3React } from 'src/hooks'
+import { CustomLightSpinner } from '../../themes'
+import Circle from '../../assets/images/blue-loader.svg'
+import { useActiveWeb3React } from '../../hooks'
 import { useGelatoLimitOrders } from '@gelatonetwork/limit-orders-react'
-import { shortenAddress, isAddress } from 'src/utils'
+import { shortenAddress, isAddress } from '../../utils'
 import { FiatValue } from './FiateValue'
-import { computeFiatValuePriceImpact } from 'src/utils/computeFiatValuePriceImpact'
-import useUSDCPrice from 'src/utils/useUSDCPrice'
-import { CHAINS } from 'src/constants/chains'
+import { computeFiatValuePriceImpact } from '../../utils/computeFiatValuePriceImpact'
+import useUSDCPrice from '../../utils/useUSDCPrice'
+import { CHAINS } from '../../constants/chains'
 
 interface Props {
   isOpen: boolean

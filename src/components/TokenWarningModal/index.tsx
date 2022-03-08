@@ -103,7 +103,7 @@ export default function TokenWarningModal({
   const handleDismiss = useCallback(() => null, [])
   const { t } = useTranslation()
   return (
-    <Modal isOpen={isOpen} onDismiss={handleDismiss} maxHeight={90}>
+    <Modal isOpen={isOpen} onDismiss={handleDismiss} /*maxHeight={90} ATTENTION*/>
       <WarningContainer className="token-warning-container">
         <AutoColumn gap="lg">
           <AutoRow gap="6px">

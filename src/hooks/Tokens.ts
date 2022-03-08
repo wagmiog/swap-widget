@@ -9,7 +9,7 @@ import { isAddress } from '../utils'
 import { useActiveWeb3React } from './index'
 import { useBytes32TokenContract, useTokenContract } from './useContract'
 
-import { CHAINS, ChainsId } from 'src/constants/chains'
+import { CHAINS, ChainsId } from '../constants/chains'
 
 export function useAllTokens(): { [address: string]: Token } {
   const { chainId } = useActiveWeb3React()

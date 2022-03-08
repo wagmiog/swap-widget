@@ -22,9 +22,9 @@ import {
   Link
 } from './styled'
 import SwapDetailInfo from '../SwapDetailInfo'
-import { CustomLightSpinner } from 'src/theme'
-import Circle from 'src/assets/images/blue-loader.svg'
-import { useActiveWeb3React } from 'src/hooks'
+import { CustomLightSpinner } from '../../themes'
+import Circle from '../../assets/images/blue-loader.svg'
+import { useActiveWeb3React } from '../../hooks'
 
 interface Props {
   isOpen: boolean

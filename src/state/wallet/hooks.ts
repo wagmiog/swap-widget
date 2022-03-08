@@ -1,4 +1,4 @@
-import { PNG } from './../../constants/index'
+import { PNG } from './../../constants/address'
 import { Currency, CurrencyAmount, CAVAX, JSBI, Token, TokenAmount, ChainId } from '@pangolindex/sdk'
 import { useMemo } from 'react'
 import ERC20_INTERFACE from '../../abis/erc20'
@@ -7,7 +7,6 @@ import { useActiveWeb3React } from '../../hooks'
 import { useMulticallContract } from '../../hooks/useContract'
 import { isAddress } from '../../utils'
 import { useSingleContractMultipleData, useMultipleContractSingleData } from '../multicall/hooks'
-import { useTotalPngEarned } from '../stake/hooks'
 
 /**
  * Returns a map of the given addresses to their eventually consistent ETH balances.
@@ -142,7 +141,7 @@ export function useAggregatePngBalance(): TokenAmount | undefined {
   const png = chainId ? PNG[chainId] : undefined
 
   const pngBalance: TokenAmount | undefined = useTokenBalance(account ?? undefined, png)
-  const pngUnHarvested: TokenAmount | undefined = useTotalPngEarned()
+  const pngUnHarvested: TokenAmount | undefined = useTokenBalance(account ?? undefined, png)
 
   if (!png) return undefined
 
